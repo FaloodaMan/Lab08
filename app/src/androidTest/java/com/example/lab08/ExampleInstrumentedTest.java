@@ -23,19 +23,15 @@ public class ExampleInstrumentedTest {
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
         assertEquals("com.example.lab08", appContext.getPackageName());
     }
-}
-public class CustomListTest {
     @Test
     public void testHasCity() {
         CustomList list = new CustomList();
         City calgary = new City("Calgary", "AB");
         list.addCity(calgary);
-        // This will fail initially because hasCity() doesn't
-        exist
+        // This will work now!
         assertTrue(list.hasCity(calgary));
     }
-
 }
 /**
- * yo forcing a fail 2
+ * yo forcing a fail 2 aoy
  */
